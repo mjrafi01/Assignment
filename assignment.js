@@ -1,10 +1,16 @@
 //Covert Feet to mile
 
 function feetToMile(feet) {
+
+   if (feet<0 ) {
+     console.log("Sorry!distance Can not be negative")
+     return 0;
+   } else {
     var miles=feet/5280;  //5,280 ft = 1 mi
     return miles;
+   }
 }
-var miles=feetToMile(5280);
+var miles=feetToMile(10);
 console.log('Miles   ' +(miles).toFixed(5));
 
 
@@ -48,7 +54,7 @@ console.log("Total "+brickPieces +" pieces brick");
 function tinyFriend(friendsName){
     
     if(!friendsName.length){ //Checking Empty Array
-        console.log("This array is empty");
+        console.log("Array is Empty");
     }
     else{
      var temp=friendsName[0].length;
